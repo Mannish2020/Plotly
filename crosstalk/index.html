@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<script src="lib/jquery-1.12.4/jquery.min.js"></script>
+<link href="lib/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="lib/leaflet-1.3.1/leaflet.js"></script>
+<link href="lib/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="lib/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="lib/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="lib/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="lib/leaflet-binding-2.0.3/leaflet.js"></script>
+<link href="lib/leaflet-easybutton-1.3.1/easy-button.css" rel="stylesheet" />
+<script src="lib/leaflet-easybutton-1.3.1/easy-button.js"></script>
+<script src="lib/leaflet-easybutton-1.3.1/EasyButton-binding.js"></script>
+<link href="lib/leaflet-locationfilter2-0.1.1/locationfilter.css" rel="stylesheet" />
+<script src="lib/leaflet-locationfilter2-0.1.1/locationfilter.js"></script>
+<script src="lib/leaflet-locationfilter2-0.1.1/locationfilter-bindings.js"></script>
+<link href="lib/ionicons-2.0.1/ionicons.min.css" rel="stylesheet" />
+<link href="lib/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="lib/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<link href="lib/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="lib/datatables-binding-0.15/datatables.js"></script>
+<link href="lib/dt-core-bootstrap-1.10.20/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+<link href="lib/dt-core-bootstrap-1.10.20/css/dataTables.bootstrap.extra.css" rel="stylesheet" />
+<script src="lib/dt-core-bootstrap-1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="lib/dt-core-bootstrap-1.10.20/js/dataTables.bootstrap.min.js"></script>
+<link href="lib/dt-ext-scroller-bootstrap-1.10.20/css/scroller.bootstrap.min.css" rel="stylesheet" />
+<script src="lib/dt-ext-scroller-bootstrap-1.10.20/js/dataTables.scroller.min.js"></script>
+<script src="lib/dt-ext-scroller-bootstrap-1.10.20/js/scroller.bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="lib/bootstrap-3.3.2/css/bootstrap.min.css" rel="stylesheet" />
+<script src="lib/bootstrap-3.3.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container-fluid crosstalk-bscols">
+  <div class="fluid-row">
+    <div class="col-xs-6">
+      <div id="htmlwidget-7be799bbb0a3c6bf6cbd" style="width:100%;height:400px;" class="leaflet html-widget"></div>
+      <script type="application/json" data-for="htmlwidget-7be799bbb0a3c6bf6cbd">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addSelect","args":["SharedData70c0400c"]},{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[-21.58,-30.2,-20.16,-21.53,-10.98,-22.16,-17.99,-19.76,-17.02,-20.2,-20.65,-32.22,-20.75,-19.83,-21.4,-11.38,-26.54,-20.21,-23.46,-15.67,-21.75,-12.16,-11.02,-20.3,-24.68,-21.59,-13.16,-12.95,-26.2,-16.03,-22.82,-20.4,-26.16,-15.18,-20.08,-21.4,-16.4,-19.1,-24.33,-13.84,-15.71,-20.65,-15.97,-20.83,-21.13,-21.26,-21.03,-21.11,-19.3,-15.85,-21.54,-32.45,-12.85,-18.89,-27.22,-22.03,-23.73,-19.26,-20.04,-19.72,-19.66,-13.07,-13.66,-18.06,-15.83,-21.55,-21.48,-17.87,-17.68,-15.36,-17.43,-20.3,-17.7,-17.97,-17.74,-17.9,-19.3,-22.13,-15,-28.96,-18.11,-22.26,-14.86,-20.9,-28.05,-21.96,-25.46,-18.1,-33,-27.75,-16.65,-30.09,-27.17,-24.4,-12.01,-18.12,-20.89,-18.11,-22.87,-23.81],[181.9,182,181.99,170.52,166.32,180.49,181.57,181.41,182.93,180.9,182.22,180.2,184.52,182.54,180.78,167.05,183.63,182.37,180.09,185.23,180.67,167.03,167.01,182.3,183.33,170.56,167.24,169.09,178.35,185.43,184.52,186.1,179.5,167.23,182.74,180.74,182.73,169.63,179.97,170.62,166.91,181.4,186.08,181.01,185.6,181.69,180.78,181.5,183,185.13,185.48,181.15,165.67,181.24,182.28,179.77,184.49,184.42,182.01,169.71,180.28,166.87,166.54,181.59,167.1,182.9,182.44,182,186.8,167.51,185.43,181.4,188.1,181.48,181.25,181.3,180.6,180.38,184.62,182.61,181.63,171.44,167.32,182.02,182.39,180.54,179.98,181.72,181.6,182.26,185.51,182.4,183.68,179.85,166.29,181.71,185.26,181.67,171.72,179.36],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},{"ctKey":["592","24","274","908","22","715","561","271","598","173","551","176","518","444","862","872","511","269","505","829","819","756","873","438","523","1000","860","205","115","468","889","784","319","853","241","968","772","866","838","490","545","142","677","941","758","730","861","449","745","190","349","525","620","687","341","879","950","52","385","94","25","504","99","457","813","227","824","193","411","408","131","739","995","731","895","485","287","275","785","351","800","781","927","809","910","207","848","815","104","567","245","611","392","286","352","673","839","246","656","259"],"ctGroup":"SharedData70c0400c"}]}],"limits":{"lat":[-33,-10.98],"lng":[165.67,188.1]}},"evals":[],"jsHooks":[]}</script>
+    </div>
+    <div class="col-xs-6">
+      <div id="htmlwidget-7d927031256fbf96b826" style="width:100%;height:500px;" class="datatables html-widget"></div>
+      <script type="application/json" data-for="htmlwidget-7d927031256fbf96b826">{"x":{"crosstalkOptions":{"key":["592","24","274","908","22","715","561","271","598","173","551","176","518","444","862","872","511","269","505","829","819","756","873","438","523","1000","860","205","115","468","889","784","319","853","241","968","772","866","838","490","545","142","677","941","758","730","861","449","745","190","349","525","620","687","341","879","950","52","385","94","25","504","99","457","813","227","824","193","411","408","131","739","995","731","895","485","287","275","785","351","800","781","927","809","910","207","848","815","104","567","245","611","392","286","352","673","839","246","656","259"],"group":"SharedData70c0400c"},"style":"bootstrap","filter":"none","extensions":["Scroller"],"data":[["592","24","274","908","22","715","561","271","598","173","551","176","518","444","862","872","511","269","505","829","819","756","873","438","523","1000","860","205","115","468","889","784","319","853","241","968","772","866","838","490","545","142","677","941","758","730","861","449","745","190","349","525","620","687","341","879","950","52","385","94","25","504","99","457","813","227","824","193","411","408","131","739","995","731","895","485","287","275","785","351","800","781","927","809","910","207","848","815","104","567","245","611","392","286","352","673","839","246","656","259"],[-21.58,-30.2,-20.16,-21.53,-10.98,-22.16,-17.99,-19.76,-17.02,-20.2,-20.65,-32.22,-20.75,-19.83,-21.4,-11.38,-26.54,-20.21,-23.46,-15.67,-21.75,-12.16,-11.02,-20.3,-24.68,-21.59,-13.16,-12.95,-26.2,-16.03,-22.82,-20.4,-26.16,-15.18,-20.08,-21.4,-16.4,-19.1,-24.33,-13.84,-15.71,-20.65,-15.97,-20.83,-21.13,-21.26,-21.03,-21.11,-19.3,-15.85,-21.54,-32.45,-12.85,-18.89,-27.22,-22.03,-23.73,-19.26,-20.04,-19.72,-19.66,-13.07,-13.66,-18.06,-15.83,-21.55,-21.48,-17.87,-17.68,-15.36,-17.43,-20.3,-17.7,-17.97,-17.74,-17.9,-19.3,-22.13,-15,-28.96,-18.11,-22.26,-14.86,-20.9,-28.05,-21.96,-25.46,-18.1,-33,-27.75,-16.65,-30.09,-27.17,-24.4,-12.01,-18.12,-20.89,-18.11,-22.87,-23.81],[181.9,182,181.99,170.52,166.32,180.49,181.57,181.41,182.93,180.9,182.22,180.2,184.52,182.54,180.78,167.05,183.63,182.37,180.09,185.23,180.67,167.03,167.01,182.3,183.33,170.56,167.24,169.09,178.35,185.43,184.52,186.1,179.5,167.23,182.74,180.74,182.73,169.63,179.97,170.62,166.91,181.4,186.08,181.01,185.6,181.69,180.78,181.5,183,185.13,185.48,181.15,165.67,181.24,182.28,179.77,184.49,184.42,182.01,169.71,180.28,166.87,166.54,181.59,167.1,182.9,182.44,182,186.8,167.51,185.43,181.4,188.1,181.48,181.25,181.3,180.6,180.38,184.62,182.61,181.63,171.44,167.32,182.02,182.39,180.54,179.98,181.72,181.6,182.26,185.51,182.4,183.68,179.85,166.29,181.71,185.26,181.67,171.72,179.36],[409,125,504,129,211,586,579,105,406,627,506,216,144,524,615,133,66,482,543,66,595,264,62,476,70,165,278,629,606,297,49,74,492,71,298,613,391,266,510,638,58,582,143,622,85,487,638,538,302,290,51,41,75,655,65,587,60,223,605,271,431,132,50,604,43,207,364,569,112,123,189,608,45,578,559,593,671,577,40,54,568,83,137,402,117,603,479,544,72,174,218,51,44,522,59,594,54,597,47,521],[4.4,4.7,4.2,5.2,4.2,4.6,4.9,4.4,4,4.1,4.3,5.7,4.3,4.6,4.7,4.5,4.7,4.6,4.6,4.4,4.6,4.4,4.9,4.5,4.7,6,4.3,4.5,4.4,4.8,5,4.3,4.5,5.2,4.5,4.2,4,4.8,4.8,4.6,4.8,4,4.6,4.3,5.3,4.4,4,5.5,5,4.6,5,5.5,4.4,4.1,4.2,4.8,4.7,4,5.1,4.2,5.4,4.4,5.1,4.5,4.5,4.2,4.3,4.6,4.5,4.7,4.5,4.6,4.2,4.7,4.1,4.1,4.2,5.7,5.1,4.6,4.3,4.5,4.9,4.3,5.1,5.2,4.5,4.6,4.7,4.5,5,4.4,4.8,4.7,4.9,4.6,5.1,4.6,4.6,4.2],[19,22,11,30,12,13,49,15,17,11,24,90,25,14,51,32,34,37,28,34,30,14,36,10,30,119,17,19,21,25,52,22,25,59,33,20,16,31,44,20,20,14,41,15,86,20,14,104,65,29,29,81,30,14,14,31,35,15,49,14,57,24,45,23,19,18,20,12,35,28,22,13,10,43,16,13,16,104,54,15,36,25,22,18,43,66,27,52,22,18,52,18,27,29,27,24,44,28,27,23]],"container":"<table class=\"table table-condensed\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>lat<\/th>\n      <th>long<\/th>\n      <th>depth<\/th>\n      <th>mag<\/th>\n      <th>stations<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"deferRender":true,"scrollY":300,"scroller":true,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+    </div>
+  </div>
+</div>
+</body>
+</html>
